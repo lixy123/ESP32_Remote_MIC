@@ -1,6 +1,6 @@
 # ESP32_Remote_MIC
 ESP32 as Remote MIC
-本项目是参考 https://github.com/paranerd/simplecam 项目的ESP32版本移值 
+本项目是参考 https://github.com/paranerd/simplecam 项目的ESP32版本移植，原项目的技术点是可以用网页直接访问终端监听图像和声音.目前只移植了部分声音相关的功能. 视频功能ESP32-CAM自身有带例子，如果视频声音一起传输性能不够，就没有一块移植上.
 
 功能：<br/>
 利用本程序，可以使esp32成为远程麦克风,树莓派运行Python连接此麦克风可监听到esp32的录音

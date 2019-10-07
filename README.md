@@ -16,7 +16,8 @@ L/R GND<br/>
 */<br/>
    B.ESP-EYE 很小巧，隐蔽性好,成本较高 <br/>
    C.TTGO T-Camera Plus ESP32 体积大了些，不隐蔽<br/>
-  
+   D. TTGO T-Watch 带MIC扩展板 成本较高,实测能胜任远程麦克风功能 <br/>
+   
 2.树莓派<br/>
    推荐用树莓派3B, 不推荐树莓派4B, 4B发热量大，用起来要加风扇，风扇噪音影响录音效果
 

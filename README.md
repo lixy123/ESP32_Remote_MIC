@@ -32,6 +32,8 @@ L/R GND<br/>
   B.esp32_remote_mic2 <br/>
   本程序较复杂，除了创建Websocket服务器，兼容上一版本的功能，另外还创建了Web服务器，客户端用网页浏览器访问后可以通过浏览器直接听到声音。此程序有bug,先开始不发声，算法经过改进能发出声音，但混杂有较大杂音，正在恶补web Audio实现pcm音频数据播放的知识。如果有高手可拿去修改. (注:此程序有bug,还不可用) <br/>
 2. 客户端<br/>
+  预安装sudo pip install websocket_client <br/>
+  文件拷入树莓派目录 <br/>
   A. esp32mic_to_file.py <br/>
      执行: python esp32mic_to_file.py<br/>
      连接ESP32远程麦克风，声音文件输出至文件。<br/>

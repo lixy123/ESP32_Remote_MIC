@@ -7,7 +7,7 @@ ESP32 as Remote MIC
 硬件: 以下三种方案任选一种<br/>
 1.ESP32+ INMP441(I2S麦克风模块)<br/>
    推荐硬件：<br/>
-   A.普通ESP32+INMP441 成本低，连接较臃肿
+   A.普通ESP32+INMP441 成本低，连接较臃肿<br/>
 /* ESP32+INMP441(I2S麦克风模块) 接线定义见I2S.h <br/>
 SCK IO14<br/>
 WS  IO27<br/>

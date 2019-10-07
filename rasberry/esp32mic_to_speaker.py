@@ -11,7 +11,7 @@ import sys
 #偶尔发现卡顿，与网络连接稳定性有关,如果不需要实时发声，可以直接转录成wav或实时压缩成mp3
 #下一步计划:
 #1.监听声音流已固定写成: 16位录音,单声道 16000HZ 此声音质量可以用于百度语音文字识别的要求,如果监听用，可考虑降低声音等级，这样可改进声音流卡顿问题
-#  每秒32K字节(16000*16/2) =256Kbsp 网络传输压力不太大
+#  每秒32K字节(16000*16/8) =256Kbsp 网络传输压力不太大
 #2.没有用到psram,因为考虑到监听需要,录制的声音没必要用到psram转存，如果不监听，可考虑把一部分声音数据缓存到psram中，避免声音数据因为传输处理过快丢失。
 
 CHUNK = 8000
@@ -24,8 +24,7 @@ g_all_second=10
 g_audio=None
 g_stream=None
 
-#网速不稳定，声音有时会卡？
-#fn="esp32.wav"
+#网速不稳定，声音会卡
 
 class timer(threading.Thread): #The timer class is derived from the class threading.Thread  
   def __init__(self, num, interval):  

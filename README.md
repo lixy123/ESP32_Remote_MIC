@@ -1,19 +1,24 @@
-# ESP32_Remote_MIC
 ESP32 as Remote MIC
-本项目是参考 https://github.com/paranerd/simplecam 项目的ESP32版本移植，原项目的技术点是可以用网页直接访问终端监听图像和声音.目前只移植了部分声音相关的功能. 视频功能ESP32-CAM自身有带例子，如果视频声音一起传输性能不够，就没有一块移植上.
+本项目是参考 https://github.com/paranerd/simplecam 项目的ESP32版本移植，原项目的技术点是可以用网页直接访问终端监听图像和声音.目前只移植了部分声音相关的功能. Arduino for esp32 自带ESP32-CAM的例子，重写一遍没啥技术含量，所以没啥移植的意义。
 
 功能：<br/>
 利用本程序，可以使esp32成为远程麦克风,树莓派运行Python连接此麦克风可监听到esp32的实时录音
 
 硬件:<br/>
 1.ESP32+ INMP441(I2S麦克风模块)<br/>
+   推荐硬件：<br/>
+   A.普通ESP32+INMP441 成本低，连接较臃肿
 /* ESP32+INMP441(I2S麦克风模块) 接线定义见I2S.h <br/>
 SCK IO14<br/>
 WS  IO27<br/>
 SD  IO2<br/>
 L/R GND<br/>
 */<br/>
+   B.ESP-EYE 很小巧，隐蔽性好,成本较高 <br/>
+   C.TTGO T-Camera Plus ESP32 体积大了些，不隐蔽<br/>
+  
 2.树莓派<br/>
+   推荐用树莓派3B, 不推荐树莓派4B, 4B发热量大，用起来要加风扇，风扇噪音影响录音效果
 
 使用场景：<br/>
 单元楼大门声音对话，监听防盗等

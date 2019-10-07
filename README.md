@@ -33,7 +33,7 @@ L/R GND<br/>
      执行: python esp32mic_to_speaker.py<br/>
      连接ESP32远程麦克风，声音文件输出树莓派的扬声器。<br/>
   C. esp32mic_to_txt (用到了snowboy库，辅助文件较多) <br/>
-     执行: python esp32_remote_mic.py <br/>
+     执行: 先进入子目录，执行python esp32_remote_mic.py <br/>
      默认60秒,带参数可延长时间.  <br/>
      连接ESP32远程麦克风，声音数据实时由树莓派处理，当检测到有人说话时识别出声音中的文字<br/>
   注意修改路由器连接密码以及IP地址,文件引用地址.

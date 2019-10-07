@@ -26,6 +26,15 @@ L/R GND<br/>
   B.esp32_remote_mic2 <br/>
   本程序较复杂，除了创建Websocket服务器，兼容上一版本的功能，另外还创建了Web服务器，客户端用网页浏览器访问后可以通过浏览器直接听到声音。此程序有bug,最终完全无声，后来经过改进已经能发出声音，但混杂有较大杂音，正在恶补web Audio实现pcm音频数据播放的知识。如果有高手可拿去修改. (注:此程序有bug,还不可用) <br/>
 2. 客户端<br/>
-rasberry 下两个py文件分别是监听声音文件直接输出到扬声器，输出到wav文件两个版本。<br/>
-两个程序都需要连接路由器，注意修改路由器连接密码以及IP地址
+  A. esp32mic_to_file.py <br/>
+     执行: python esp32mic_to_file.py<br/>
+     连接ESP32远程麦克风，声音文件输出至文件。<br/>
+  B. esp32mic_to_speaker.py<br/>
+     执行: python esp32mic_to_speaker.py<br/>
+     连接ESP32远程麦克风，声音文件输出树莓派的扬声器。<br/>
+  C. esp32mic_to_txt (用到了snowboy库，辅助文件较多) <br/>
+     执行: python esp32_remote_mic.py <br/>
+     默认60秒,带参数可延长时间.  <br/>
+     连接ESP32远程麦克风，声音数据实时由树莓派处理，当检测到有人说话时识别出声音中的文字<br/>
+  注意修改路由器连接密码以及IP地址,文件引用地址.
 

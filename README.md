@@ -36,6 +36,7 @@ L/R GND<br/>
   B.esp32_remote_mic2 <br/>
   本程序是升级版, 代码功能已可用, 网上版本是旧程序,还想继续优化,所以未全部上传<br/>
   除了兼容上一版本的功能，本身另外创建html-Web服务器，客户端用html5网页浏览器访问,并可通过浏览器监听到声音<br/>
+  注:现在安卓,苹果手机内置的浏览器基本上都是html5.<BR/>
 2. 客户端<br/>
   预安装sudo pip install websocket_client <br/>
   文件拷入树莓派目录 <br/>

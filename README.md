@@ -3,7 +3,7 @@ ESP32 as Remote MIC
 
 功能：<br/>
 利用本程序，可以使esp32成为远程麦克风, 被树莓派开发的智能音箱系统用作硬件扩展 <br/>
-
+ 
 示意图:<br/>
 <img src= 'https://github.com/lixy123/ESP32_Remote_MIC/blob/master/ESP32_MIC.jpg?raw=true' />
 <br/>
@@ -31,7 +31,7 @@ L/R GND<br/>
 1. 服务端<br/>
   A.esp32_remote_mic  <br/>
   本程序很简单，创建一个固定IP的Websocket服务器，当收到客户端发来的文字数据秒数，就在接连的秒数内把声音信号发回客户端。<br/>
-  未设计成多并发，只支持同时一个客户端。
+  未设计成多并发，只支持同时一个客户端。<br/>
   用arduino工具烧录到esp32<br/>
   B.esp32_remote_mic2 <br/>
   本程序是升级版, 除了兼容上一版本的功能，可以通过支持html5网页浏览器本硬件,通过浏览器传输声音<br/>

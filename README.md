@@ -1,13 +1,15 @@
 ESP32 as Remote MIC
 本项目是参考 https://github.com/paranerd/simplecam 项目的ESP32版本移植，原项目的技术点是可以用网页直接访问终端监听图像和声音.目前只移植了部分声音相关的功能. Arduino for esp32 自带摄像头的例子，已经有了摄像头功能，唯独缺少声音功能。
 
-功能：<br/>
+<b>功能：</b><br/>
 利用本程序，可以使esp32成为远程麦克风, 被树莓派开发的智能音箱系统用作硬件扩展 <br/>
  
-示意图:<br/>
+<b>示意图:</b><br/>
 <img src= 'https://github.com/lixy123/ESP32_Remote_MIC/blob/master/ESP32_MIC.jpg?raw=true' />
 <br/>
-硬件: 以下三种方案任选一种<br/>
+
+<b>硬件:</b> <br/>
+以下三种方案任选一种<br/>
 1.ESP32+ INMP441(I2S麦克风模块)<br/>
    推荐硬件：<br/>
    A.普通ESP32+INMP441 成本低，连接较臃肿<br/>
@@ -24,11 +26,11 @@ L/R GND<br/>
 2.树莓派<br/>
    推荐用树莓派3B, 不推荐树莓派4B, 4B发热量大，用起来要加风扇，风扇噪音影响录音效果
 
-使用场景：<br/>
+<b>使用场景：</b><br/>
    单元楼大门声音对话，监听防盗, 作为智能音箱远程附件等
 
-使用方法：<br/>
-场景1:<br/>
+<b>使用方法：</b><br/>
+<b>场景1:</b><br/>
    直接用网页浏览器访问监听esp32的MIC,耳机监听到声音<br/>
 1. 服务端<br/>
   esp32_remote_mic2 <br/> 
@@ -42,7 +44,7 @@ L/R GND<br/>
  <br/>
  
  
-场景2:<br/>
+<b>场景2:</b><br/>
    用树莓派获取esp32上的MIC声音信号, 监听,播放,存储,甚至实时采集后识别出文字等<br/>
 1. 服务端<br/>
   esp32_remote_mic  初级版<br/>

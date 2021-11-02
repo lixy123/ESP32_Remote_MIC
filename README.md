@@ -10,11 +10,11 @@ esp32也能实现图像声音传输功能,目前只开发了声音功能.<br/>
  ESP32+ INMP441(I2S麦克风模块)<br/>
    推荐硬件：<br/>
    A.普通ESP32+INMP441麦克风模块 成本低，需要几根杜邦线连接, 显得不整洁<br/>
-INMP441 ESP32 , 接线定义见I2S.h <br/>
-SCK     IO14<br/>
-WS      IO27<br/>
-SD      IO2<br/>
-L/R     GND<br/>
+INMP441 <---> ESP32 , 接线定义见I2S.h <br/>
+SCK   <--->   IO14<br/>
+WS    <--->   IO27<br/>
+SD    <--->   IO2<br/>
+L/R   <--->   GND<br/>
 
    B.ESP-EYE 小巧，隐蔽性好,价格有些贵 <br/>
    

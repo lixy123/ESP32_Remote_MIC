@@ -9,16 +9,19 @@ esp32也能实现图像声音传输功能,目前只开发了声音功能.<br/>
 <b>二.硬件:</b> <br/>
  ESP32+ INMP441(I2S麦克风模块)<br/>
    推荐硬件：<br/>
-   A.普通ESP32+INMP441 成本低，连接较臃肿<br/>
+   A.普通ESP32+INMP441 成本低，需要几根杜邦线连接, 显得不整洁<br/>
 /* ESP32+INMP441(I2S麦克风模块) 接线定义见I2S.h <br/>
 SCK IO14<br/>
 WS  IO27<br/>
 SD  IO2<br/>
 L/R GND<br/>
-*/<br/>
-   B.ESP-EYE 很小巧，隐蔽性好,成本较高 <br/>
-   C.TTGO T-Camera Plus ESP32 体积大了些，不隐蔽<br/>
-   D.TTGO T-Watch 带MIC扩展板 成本高,隐蔽性好,有些浪费硬件 <br/>
+* /<br/>
+
+   B.ESP-EYE 小巧，隐蔽性好,价格有些贵 <br/>
+   
+   C.TTGO T-Camera Plus ESP32 体积有些大，不隐蔽<br/>
+   
+   D.TTGO T-Watch 加一块带MIC扩展板 成本略高,隐蔽性好 <br/>
    
 <b>三.使用方法：</b><br/>
   打开网页浏览器, 输入访问地址 http://192.168.1.100 , 
